@@ -1,0 +1,24 @@
+\hypertarget{_save_read_file_8hpp_source}{}\doxysection{Save\+Read\+File.\+hpp}
+\mbox{\hyperlink{_save_read_file_8hpp}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef PASSWORDMANAGER\_SAVEREADFILE\_HPP}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define PASSWORDMANAGER\_SAVEREADFILE\_HPP}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include<iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <filesystem>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{_password_8hpp}{Password.hpp}}"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{class_save_read_file}{SaveReadFile}} \{}
+\DoxyCodeLine{9 \textcolor{keyword}{public}:}
+\DoxyCodeLine{10     \textcolor{keyword}{static} \textcolor{keyword}{auto} \mbox{\hyperlink{class_save_read_file_a0b8f0b749a3de9c73634b67d74f7a17d}{write\_to\_encrypt\_file}}(\textcolor{keyword}{const} std::vector<std::shared\_ptr<Password>>\& passwords) -\/> void;}
+\DoxyCodeLine{11     \textcolor{keyword}{static} \textcolor{keyword}{auto} \mbox{\hyperlink{class_save_read_file_a189db9e977410e56bb452d35d85c4c51}{write\_to\_category\_file}}(\textcolor{keyword}{const} std::vector<std::string>\& category) -\/> void;}
+\DoxyCodeLine{12     \textcolor{keyword}{static} \textcolor{keyword}{auto} \mbox{\hyperlink{class_save_read_file_a5d4174fe163693a538b8a413100f10af}{read\_from\_category\_file}}(std::vector<std::string>\& category) -\/> void;}
+\DoxyCodeLine{13     \textcolor{keyword}{static} \textcolor{keyword}{auto} \mbox{\hyperlink{class_save_read_file_acb205e8bb83484c54043279988e88f94}{read\_from\_encrypt\_file}}(std::vector<std::shared\_ptr<Password>>\& passwords) -\/> void;}
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15     \textcolor{keyword}{static} \textcolor{keyword}{auto} search\_encrypt\_file() -\/> std::filesystem::path;}
+\DoxyCodeLine{16     \textcolor{keyword}{static} \textcolor{keyword}{auto} search\_category\_file() -\/> std::filesystem::path;}
+\DoxyCodeLine{17 \};}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
